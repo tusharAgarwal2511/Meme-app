@@ -20,7 +20,7 @@ class ApiViewModel : ViewModel() {
 
         CoroutineScope(Dispatchers.Main).launch {
             apiData = memeApi.getMemes()
-            var memeImageUrl = apiData.body()!!.url
+            memeImageUrl = apiData.body()!!.url
         }
     }
 }
