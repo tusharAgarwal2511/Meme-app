@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET("/") // endpoint
+    @GET("/gimme") // endpoint
     suspend fun getMemes() : Response<MemeModal>
 }

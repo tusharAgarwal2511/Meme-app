@@ -26,8 +26,10 @@ class MainActivity : AppCompatActivity() {
         apiViewModel = ViewModelProvider(this)[ApiViewModel::class.java]
 
         // the url of the meme image
-        memeImageURl = apiViewModel.memeImageUrl
         mainActivityBinding.btnNextMeme.setOnClickListener {
+
+            apiViewModel.getApiData()
+            memeImageURl = apiViewModel.memeImageUrl.toString()
 
             Log.e("MyTag", memeImageURl)
         }

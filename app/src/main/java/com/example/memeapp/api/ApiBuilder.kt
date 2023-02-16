@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiBuilder {
 
     // base url of the api
-    private const val BASE_URL = "https://meme-api.com/gimme/"
+    private const val BASE_URL = "https://meme-api.com/"
 
     fun getInstance(): Retrofit {
 
